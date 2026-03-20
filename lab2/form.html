@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <style>
+    button[type="submit"] {
+        background-color: lightgreen;
+        color: black;
+    }
+    </style>
+    <style>
+    button[type="reset"] {
+        background-color: lightcoral;
+        color: black;
+    }
+    </style>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Форма регистрации</title>
+</head>
+<body>
+    <h1>Форма регистрации пользователя</h1>
+    
+    <form action="#" method="post">
+        <p>
+            <label>E-mail:</label>
+            <input type="email" name="email" placeholder="Введите e-mail" required>
+        </p>
+        <p>
+            <label>Пароль:</label>
+            <input type="password" name="password" placeholder="Введите пароль" required>
+        </p>
+        
+        <p>
+            <label>Пол:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Мужчина</label>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Женщина</label>
+        </p>
+        
+        <p>
+            <label>Год рождения:</label>
+            <select name="birthyear">
+                <option>2004</option>
+                <option>2005</option>
+                <option>2006</option>
+            </select>
+        </p>
+        <p>
+            <label>Языки:</label><br>
+            <input type="checkbox" id="russian" name="lang" value="russian" checked disabled>
+            <label for="russian">Русский</label>
+            
+            <input type="checkbox" id="spanish" name="lang" value="spanish">
+            <label for="spanish">Испанский</label>
+            
+            <input type="checkbox" id="german" name="lang" value="german">
+            <label for="german">Немецкий</label>
+            
+            <input type="checkbox" id="english" name="lang" value="english">
+            <label for="english">Английский</label>
+            
+            <input type="checkbox" id="chinese" name="lang" value="chinese">
+            <label for="chinese">Китайский</label>
+        </p>
+        <p>
+            <label>Обо мне:</label><br>
+            <textarea name="about" rows="4" cols="40" placeholder="Напишите коротко о себе"></textarea>
+        </p>
+        
+        <p>
+            <button type="submit">Готово</button>
+            <button type="reset">Очистить</button>
+        </p>
+    </form>
+</body>
+</html>
