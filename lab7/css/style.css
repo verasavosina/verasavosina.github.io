@@ -1,0 +1,93 @@
+.logo-img {
+  height: 60px;
+}
+
+.service-img, .step-img, .portfolio-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* Новый класс для больших изображений */
+.portfolio-large {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+.banner {
+  position: relative;
+  z-index: 1;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.work-process {
+  margin-top: 0;
+  padding-top: 0;
+}
+/* Убираем нижний отступ у блока услуг */
+#services {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* Убираем верхний отступ у блока "Как я работаю" */
+.work-process {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Дополнительно подстрахуем — убираем отступ у последнего элемента в услугах */
+#services .row:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.banner .container {
+  position: relative;
+  z-index: 2;
+}
+.service-img-large {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  aspect-ratio: 800 / 450;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.footer {
+  background: #111;
+  color: #ccc;
+}
+
+hr {
+  border-top: 2px solid #aaa;
+}
+
+#about p {
+  text-align: justify;
+}
+
+.btn-mustard {
+  background-color: #c79821;
+  border-color: #c79821;
+  color: #fff;
+}
+
+.btn-mustard:hover {
+  background-color: #a87c1a;
+  border-color: #a87c1a;
+  color: #fff;
+}
