@@ -2,13 +2,14 @@
   height: 60px;
 }
 
-.service-img, .step-img, .portfolio-img {
+/*скругление углов на фото*/
+.service-img, .step-img, .portfolio-img { 
   width: 100%;
   border-radius: 12px;
   margin-bottom: 15px;
 }
 
-/* Новый класс для больших изображений */
+/*для большой фотографии*/
 .portfolio-large {
   width: 100%;
   height: auto;
@@ -16,11 +17,11 @@
   display: block;
 }
 
+/*затемнение баннера*/
 .banner {
   position: relative;
   z-index: 1;
 }
-
 .banner::before {
   content: "";
   position: absolute;
@@ -36,27 +37,26 @@
   margin-top: 0;
   padding-top: 0;
 }
-/* Убираем нижний отступ у блока услуг */
-#services {
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-/* Убираем верхний отступ у блока "Как я работаю" */
-.work-process {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-/* Дополнительно подстрахуем — убираем отступ у последнего элемента в услугах */
-#services .row:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
 .banner .container {
   position: relative;
   z-index: 2;
 }
+
+/*отступы*/
+#services {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.work-process {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+#services .row:uslugi {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+
 .service-img-large {
   width: 100%;
   max-width: 800px;
