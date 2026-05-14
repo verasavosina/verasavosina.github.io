@@ -56,7 +56,6 @@
   padding-bottom: 0;
 }
 
-
 .service-img-large {
   width: 100%;
   max-width: 800px;
@@ -70,10 +69,6 @@
 .footer {
   background: #111;
   color: #ccc;
-}
-
-hr {
-  border-top: 2px solid #aaa;
 }
 
 #about p {
